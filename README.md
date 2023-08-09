@@ -1,4 +1,6 @@
-<h1>👋 Olá, eu sou Gabrielle Oliveira! </h1>
+<h1>👋 Hi, I'm Gabrielle Oliveira! </h1>
+<h2>Welcome to my GitHub</h2>
+<h3>I'm currently learning Data Science and improving my skills on FullStack applications</h3>
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=gabriellefoliv&show_icons=true&theme=radical" />
