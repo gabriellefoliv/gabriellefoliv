@@ -4,7 +4,7 @@
 # 💫 About Me:
 - 🔥 I'm currently working as a Freelancer
 - 🔭 I build apps and websites
-- 👩🏽‍💻 All of my projects are available at [https://gabriellefoliv.github.io/portfolio/](https://gabriellefoliv.github.io/portfolio/)
+- 👩🏽‍💻 All of my projects are available at [https://gabriellefoliv.github.io/gabriellefoliv/](https://gabriellefoliv.github.io/gabriellefoliv/)
 - 🗯️ Ask me about React Native and TypeScript
 - 📫 How to reach me oliveiragabrielle662@gmail.com
 
@@ -66,3 +66,6 @@
 <img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=gabriellefoliv&label=Profile%20views&color=0e75b6&style=flat" alt="gabriellefoliv" /></p>
