@@ -84,17 +84,18 @@ Error generating stack: `+o.message+`
     margin-left: 15px;
     padding: 5px 5px;
 
-    @media (max-width: 1024px) {
-        transform: scale(0.85);
+    @media screen and (max-width: 790px) {
+        transform: scale(0.75);
         margin: 0;
         padding: 0;
+        margin-left: -19px;
     }
 `,B0=j.h2`
     font-size: 24px;
-`,H0=j.h3`
+`,H0=j.p`
     font-size: 18px;
     margin-bottom: 5px;
-`;function V0({Logo:e,Title:t,Date:n}){return C.jsxs(M0,{children:[C.jsx(A0,{src:e}),C.jsxs(U0,{children:[C.jsx(B0,{children:t}),C.jsx(H0,{children:n})]})]})}const W0="/gabriellefoliv/assets/logomarca-uerj-xL7mwLFe.png";function Q0(){return C.jsxs(D0,{id:"education",children:[C.jsx(O0,{children:"Educação"}),C.jsx(F0,{children:C.jsx(V0,{Logo:W0,Title:"Universidade do Estado do Rio de Janeiro",Date:"Início: 2023/1; Previsão de Graduação: 2027/2 "})})]})}const G0=j.h2`
+`;function V0({Logo:e,Title:t,Date:n}){return C.jsxs(M0,{children:[C.jsx(A0,{src:e}),C.jsxs(U0,{children:[C.jsx(B0,{children:t}),C.jsx(H0,{children:n})]})]})}const W0="/gabriellefoliv/assets/logomarca-uerj-xL7mwLFe.png";function Q0(){return C.jsxs(D0,{id:"education",children:[C.jsx(O0,{children:"Educação"}),C.jsx(F0,{children:C.jsx(V0,{Logo:W0,Title:"Universidade do Estado do Rio de Janeiro",Date:"Início: 2023/1 "})})]})}const G0=j.h2`
     text-align: center;
     z-index: 5;
     position: relative;
@@ -155,10 +156,11 @@ Error generating stack: `+o.message+`
     margin-right: 20px;
     box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
 
-    @media (max-width: 1024px) {
-        transform: scale(0.7);
+    @media screen and (max-width: 790px) {
+        transform: scale(0.6);
         padding: 0;
         margin: 0;
+        margin-left: -30px;
     }
 
 `,J0=j.h2`
@@ -172,9 +174,10 @@ Error generating stack: `+o.message+`
     margin-left: 15px;
     padding: 5px 5px;
 
-    @media (max-width: 1024px) {
-        transform: scale(0.7);
-        margin: 0;
+    @media screen and (max-width: 790px) {
+        width: 100%;
+        transform: scale(0.6);
+        margin: 0 -70px;
         padding: 0;
     }
 
@@ -187,6 +190,10 @@ Error generating stack: `+o.message+`
     text-align: center;
     font-size: 18px;
     padding-top: 20px;
+
+    @media screen and (max-width: 790px) {
+        font-size: 12px;
+    }
 `;function lm(){return C.jsx(im,{children:C.jsx(om,{children:"Copyright © 2023 Gabrielle. All Rights Reserved."})})}const um=j.div`
     width: 100%;
     height: 500px;
@@ -196,12 +203,14 @@ Error generating stack: `+o.message+`
     /* position: relative; */
     /* z-index: 5; */
     /* overflow-x: hidden; */
-    
+    @media (max-width: 790px) {
+        margin-bottom: 430px;
+    }
 
 `,sm=j.div`
     /* width: 1000px;
     height: 300px; */
-    /* width: 80%; */
+    width: 76vw;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -255,6 +264,7 @@ Error generating stack: `+o.message+`
 `,dm=j.p`
     font-weight: 300;
     line-height: 28px;
+    text-align: justify;
 `,pm=j.h1`
     font-size: 30px;
     margin-bottom: 10px;
@@ -361,31 +371,28 @@ Error generating stack: `+o.message+`
     justify-content: space-between;
     align-items: center;
     z-index: 50;
+    margin-top: 10px;
 
     @media (min-width: 1024px) {
         .hamburguer {
             display: none;
-            
         }
-
     }
-`,Sm=j.div`
-    margin-left: 0px;
-    padding: 20px 10px;
-    flex: 1;
-    width: 400px;
-    text-align: center;
-`,km=j.a`
+`,Sm=j.a`
     color: #45a6ff;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
     text-align: center;
-`,Em=j.ul`
+    margin-right: 50px;
+    
+
+    
+`,km=j.ul`
     padding: 30px 0;
     margin: 0;
     border-radius: 5px;
@@ -450,7 +457,7 @@ Error generating stack: `+o.message+`
         opacity: 0.5;
         transition: 0.5s;
     }
-`,Cm=j.img`
+`,Em=j.img`
     z-index: 5;
     width: 24px;
     cursor: pointer;
@@ -459,7 +466,7 @@ Error generating stack: `+o.message+`
         width: 20px;
         height: 20px;
     }
-`,_m="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='18'%20height='19'%3e%3cg%20fill='%232D314D'%20fill-rule='evenodd'%3e%3cpath%20d='M.868.661l16.97%2016.97-.706.708L.162%201.369z'/%3e%3cpath%20d='M.161%2017.632L17.131.662l.708.706-16.97%2016.97z'/%3e%3c/g%3e%3c/svg%3e",Pm="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='11'%3e%3cg%20fill='%232D314D'%20fill-rule='evenodd'%3e%3cpath%20d='M0%200h24v1H0zM0%205h24v1H0zM0%2010h24v1H0z'/%3e%3c/g%3e%3c/svg%3e";function Nm(){const[e,t]=Fn.useState(!1),n=()=>{t(!e),window.scrollTo(0,0)};return C.jsxs(C.Fragment,{children:[C.jsx(xm,{className:e?"active":""}),C.jsxs(wm,{children:[C.jsx(Sm,{children:C.jsx(km,{href:"",children:"Gabrielle Oliveira"})}),C.jsxs(Em,{className:e?"active":"list",children:[C.jsx(ii,{children:C.jsx(oi,{href:"#about",children:"Sobre Mim"})}),C.jsx(ii,{children:C.jsx(oi,{href:"#projects",children:"Projetos"})}),C.jsx(ii,{children:C.jsx(oi,{href:"#experience",children:"Experiência"})}),C.jsx(ii,{children:C.jsx(oi,{href:"#education",children:"Educação"})})]}),C.jsx(Cm,{src:e?_m:Pm,alt:"menu",onClick:n,className:e?"close hamburguer":"hamburguer"})]})]})}function zm(){return C.jsxs(um,{children:[C.jsx(Nm,{}),C.jsx(ym,{})]})}const jm=j.div`
+`,Cm="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='18'%20height='19'%3e%3cg%20fill='%232D314D'%20fill-rule='evenodd'%3e%3cpath%20d='M.868.661l16.97%2016.97-.706.708L.162%201.369z'/%3e%3cpath%20d='M.161%2017.632L17.131.662l.708.706-16.97%2016.97z'/%3e%3c/g%3e%3c/svg%3e",_m="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='11'%3e%3cg%20fill='%232D314D'%20fill-rule='evenodd'%3e%3cpath%20d='M0%200h24v1H0zM0%205h24v1H0zM0%2010h24v1H0z'/%3e%3c/g%3e%3c/svg%3e";function Pm(){const[e,t]=Fn.useState(!1),n=()=>{t(!e),window.scrollTo(0,0)};return C.jsxs(C.Fragment,{children:[C.jsx(xm,{className:e?"active":""}),C.jsxs(wm,{children:[C.jsx(Sm,{href:"",children:"Gabrielle Oliveira"}),C.jsxs(km,{className:e?"active":"list",children:[C.jsx(ii,{children:C.jsx(oi,{href:"#about",children:"Sobre Mim"})}),C.jsx(ii,{children:C.jsx(oi,{href:"#projects",children:"Projetos"})}),C.jsx(ii,{children:C.jsx(oi,{href:"#experience",children:"Experiência"})}),C.jsx(ii,{children:C.jsx(oi,{href:"#education",children:"Educação"})})]}),C.jsx(Em,{src:e?Cm:_m,alt:"menu",onClick:n,className:e?"close hamburguer":"hamburguer"})]})]})}function Nm(){return C.jsxs(um,{children:[C.jsx(Pm,{}),C.jsx(ym,{})]})}const zm=j.div`
     /* position: relative; */
     display: flex;
     flex-direction: column;
@@ -471,12 +478,11 @@ Error generating stack: `+o.message+`
         margin-top: 300px;
     }
 
-`,Tm=j.div`
+`,jm=j.div`
     display: flex;
     flex-direction: column;
     gap: 24px;
     justify-content: space-evenly;
-
     /* display: flex;
     flex-direction: column;
     align-items: center;
@@ -496,24 +502,24 @@ Error generating stack: `+o.message+`
         
     }
 
-`,Lm=j.h2`
+`,Tm=j.h2`
     text-align: center;
-`,Rm=j.p`
+`,Lm=j.p`
     font-size: 18px;
     text-align: center;
     color: darkgray;
-`,$m=j.div`
+`,Rm=j.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    gap: 24px;
+    gap: 12px;
     margin-bottom: 50px;
 
     @media (min-width: 1024px) {
         max-width: 450px;
     }
-`,Im=j.div`
+`,$m=j.div`
     width: 350px;
     height: 490px;
     background-color: white;
@@ -528,9 +534,19 @@ Error generating stack: `+o.message+`
         transform: scale(1.01);
         transition: 0.3s;
     }
+
+    @media screen and (max-width: 790px) {
+        transform: scale(0.87);
+        margin-bottom: 0;
+        
+        &:hover {
+            transform: scale(0.9);
+            transition: 0.3s;
+        }
+    }
     
     
-`,Om=j.img`
+`,Im=j.img`
     width: 340px;
     height: 200px;
     border-radius: 20px;
@@ -540,22 +556,23 @@ Error generating stack: `+o.message+`
     margin-left: 5px;
     padding: 0px 0px;
     box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
-`,Dm=j.h3`
+`,Om=j.h3`
     padding: 10px 20px;
-`,Fm=j.p`
+`,Dm=j.p`
     padding: 5px 20px;
     font-size: 14px;
-`,Mm=j.div`
+    text-align: justify;
+`,Fm=j.div`
     padding: 5px 20px;
     margin-top: 5px;
     font-size: 14px;
     color: blueviolet;
-`,Am=j.div`
+`,Mm=j.div`
     display: flex;
     padding: 50px 20px;
     border-radius: 20px;
 
-`,Um=j.a`
+`,Am=j.a`
     width: 80px;
     height: 40px;
     padding: 0 10px;
@@ -605,7 +622,7 @@ Error generating stack: `+o.message+`
         transform: translateY(0);
     }
     
-`,Bm=j.a`
+`,Um=j.a`
     width: 80px;
     height: 40px;
     padding: 0 10px;
@@ -654,14 +671,19 @@ Error generating stack: `+o.message+`
         box-shadow: rgba(0, 0, 0, .08) 0 2px 4px;
         transform: translateY(0);
     }
-`;function Sa({Screenshot:e,Title:t,Description:n,Technologies:r,Site:i,Code:o}){return C.jsxs(Im,{children:[C.jsx(Om,{src:e}),C.jsx(Dm,{children:t}),C.jsx(Fm,{children:n}),C.jsx(Mm,{children:r}),C.jsxs(Am,{children:[C.jsx(Um,{href:i,target:"_blank",children:"Abra site"}),C.jsx(Bm,{href:o,target:"_blank",children:"Código"})]})]})}const Hm="/gabriellefoliv/assets/easybank-psAt2GM0.png",Vm="/gabriellefoliv/assets/thamirisadv-H8qtdky_.png";function Wm(){return C.jsxs(jm,{id:"projects",children:[C.jsxs($m,{children:[C.jsx(Lm,{children:"Projetos"}),C.jsx(Rm,{children:"Veja alguns projetos pessoais que eu desenvolvi."})]}),C.jsxs(Tm,{children:[C.jsx(Sa,{Screenshot:Hm,Title:"Easybank Landing Page",Description:"Um desafio de Frontend Mentor em que eu fui capaz de brincar com animações nos cards embaixo, assim como explorei a responsividade do site, adaptando-o para celulares e tablets.",Technologies:"TypeScript Styled-Components",Site:"https://easybank-gabsfo12.vercel.app/",Code:"https://github.com/gabriellefoliv/easybank-landing-page"}),C.jsx(Sa,{Screenshot:Vm,Title:"Thamiris Ferreira Advocacia",Description:`O site feito para um escritório de advocacia contém as telas de início, equipe, áreas de atuação e contato, com um formulário que liga direto no Gmail da cliente.\r
-                    Responsivo para celulares, tablets e computadores`,Technologies:"TypeScript Styled-Components EmailJS",Site:"https://thamirisferreiraadv.vercel.app/",Code:"https://github.com/gabriellefoliv/advocacia-especializada"})]})]})}function Qm(){return C.jsxs(C.Fragment,{children:[C.jsx(zm,{}),C.jsx(Wm,{}),C.jsx(rm,{}),C.jsx(Q0,{}),C.jsx(lm,{})]})}const Gm=I0`
+`;function Sa({Screenshot:e,Title:t,Description:n,Technologies:r,Site:i,Code:o}){return C.jsxs($m,{children:[C.jsx(Im,{src:e}),C.jsx(Om,{children:t}),C.jsx(Dm,{children:n}),C.jsx(Fm,{children:r}),C.jsxs(Mm,{children:[C.jsx(Am,{href:i,target:"_blank",children:"Abra site"}),C.jsx(Um,{href:o,target:"_blank",children:"Código"})]})]})}const Bm="/gabriellefoliv/assets/easybank-psAt2GM0.png",Hm="/gabriellefoliv/assets/thamirisadv-H8qtdky_.png";function Vm(){return C.jsxs(zm,{id:"projects",children:[C.jsxs(Rm,{children:[C.jsx(Tm,{children:"Projetos"}),C.jsx(Lm,{children:"Veja alguns projetos pessoais que eu desenvolvi."})]}),C.jsxs(jm,{children:[C.jsx(Sa,{Screenshot:Bm,Title:"Easybank Landing Page",Description:"Um desafio de Frontend Mentor em que eu fui capaz de brincar com animações nos cards embaixo, assim como explorei a responsividade do site, adaptando-o para celulares e tablets.",Technologies:"TypeScript Styled-Components",Site:"https://easybank-gabsfo12.vercel.app/",Code:"https://github.com/gabriellefoliv/easybank-landing-page"}),C.jsx(Sa,{Screenshot:Hm,Title:"Thamiris Ferreira Advocacia",Description:`O site feito para um escritório de advocacia contém as telas de início, equipe, áreas de atuação e contato, com um formulário que liga direto no Gmail da cliente.\r
+                    Responsivo para celulares, tablets e computadores`,Technologies:"TypeScript Styled-Components EmailJS",Site:"https://thamirisferreiraadv.vercel.app/",Code:"https://github.com/gabriellefoliv/advocacia-especializada"})]})]})}function Wm(){return C.jsxs(C.Fragment,{children:[C.jsx(Nm,{}),C.jsx(Vm,{}),C.jsx(rm,{}),C.jsx(Q0,{}),C.jsx(lm,{})]})}const Qm=I0`
     * {
         margin: 0px 0px;
         padding: 0;
         box-sizing: border-box;
         list-style: none;
         scroll-behavior: smooth;
+
+        @media screen and (max-width: 790px) {
+            overflow-x: clip;
+        }
+    
     }
 
 
@@ -673,4 +695,4 @@ Error generating stack: `+o.message+`
         overflow-y: scroll !important;
     }
   
-`;Jo.createRoot(document.getElementById("root")).render(C.jsxs(Ze.StrictMode,{children:[C.jsx(Gm,{}),C.jsx(Qm,{})]}));
+`;Jo.createRoot(document.getElementById("root")).render(C.jsxs(Ze.StrictMode,{children:[C.jsx(Qm,{}),C.jsx(Wm,{})]}));
