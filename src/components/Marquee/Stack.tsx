@@ -11,7 +11,7 @@ import Prisma from '../../assets/stack/icons8-prisma-orm.svg'
 
 export function Stack() {
     return (
-        <div className='-mt-16 mb-12'>
+        <div className='mt-8 md:-mt-16 mb-12'>
             <Marquee className='w-full h-full' speed={100} pauseOnHover>
                 <div className='px-8'>
                     <img src={TS} className='w-8'/>

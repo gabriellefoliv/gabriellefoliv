@@ -1,63 +1,47 @@
-import { ReactNode } from "react"
-import Externo from '../../../assets/externo.png'
-
+import { ReactNode } from "react";
+import Externo from "../../../assets/externo.png";
 interface RootProps {
-    children: ReactNode
+  children: ReactNode;
 }
 
-export function CardRoot({children}: RootProps) {
-    return (
-        <div className=" mt-6 p-4 rounded-md hover:bg-zinc-800 duration-200 transition ease-in-out">
-            {children}
-        </div>
-    )
+export function CardRoot({ children }: RootProps) {
+  return (
+    <div className=" mt-6 p-4 rounded-md hover:bg-zinc-800 duration-200 transition ease-in-out">
+      {children}
+    </div>
+  );
 }
 
 interface TitleProps {
-    title: string
-    linkTo: string
+  title: string;
+  linkTo: string;
+  previewApp?: string;
 }
 
-export function CardTitle({title, linkTo}: TitleProps) {
-    return (
+export function CardTitle({ title, linkTo }: TitleProps) {
+  return (
         <div className="flex flex-row items-center">
-            <h1 className="font-bold text-white">
-                {title}
-            </h1>
-            <a href={linkTo} className="ml-2 w-8">
-                <img src={Externo} className="w-3 h-3" />
-            </a>
-        </div>
-    )
+          <h1 className="font-bold text-white">{title}</h1>
+
+          <a href={linkTo} target="_blank" className="ml-2 w-8">
+            <img src={Externo} className="w-3 h-3" />
+          </a>
+        </div>  );
 }
 
 interface DescriptionProps {
-    description: string
+  description: string;
 }
 
-export function CardDescription({description}: DescriptionProps) {
-    return (
-        <p className="text-gray-400 mt-1">
-            {description}
-        </p>
-    )
+export function CardDescription({ description }: DescriptionProps) {
+  return <p className="text-gray-400 mt-1">{description}</p>;
 }
-
 
 export const Card = {
-    Root: CardRoot,
-    Title: CardTitle,
-    Description: CardDescription,
-}
-
-
-
-
-
-
-
-
-
+  Root: CardRoot,
+  Title: CardTitle,
+  Description: CardDescription,
+};
 
 // import * as Dialog from '@radix-ui/react-dialog'
 
@@ -75,7 +59,6 @@ export const Card = {
 //     challenges: string
 //     learnings: string
 // }
-
 
 // function ProjectCard({screenshot, title, technologies, site, code, description, challenges, learnings}:ProjectCardProps) {
 //     return(
@@ -117,7 +100,7 @@ export const Card = {
 //                     <div className='w-full h-full flex flex-col md:flex-row justify-center items-center p-4 overflow-scroll md:overflow-hidden'>
 //                         <div className='mt-32 md:mt-0 flex flex-col items-start p-4 h-full'>
 //                             <img className='w-96 h-48' src={screenshot}/>
-                            
+
 //                         </div>
 //                         <div className='p-4 flex-1 flex flex-col items-start justify-start h-full md:overflow-y-scroll text-justify px-8 leading-6'>
 //                             <h1 className='font-bold md:text-2xl mb-1'>Descrição do projeto:</h1>
@@ -131,9 +114,9 @@ export const Card = {
 //                 </Dialog.Content>
 //             </Dialog.Portal>
 //         </Dialog.Root>
-           
+
 //         </>
-        
+
 //     )
 // }
 

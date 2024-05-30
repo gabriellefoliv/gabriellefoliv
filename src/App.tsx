@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="bg-zinc-900">
 
-      <div className="max-w-2xl mx-auto px-2 md:px-0 antialiased bg-zinc-900">
+      <div className="max-w-2xl mx-auto px-0 md:px-0 antialiased bg-zinc-900 overflow-hidden">
           <Header/>
           <Stack />
           <Projects/>

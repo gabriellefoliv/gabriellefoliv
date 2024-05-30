@@ -6,6 +6,7 @@
 - 👩🏽‍💻 All of my projects are available at [https://gabriellefoliv.github.io/gabriellefoliv/](https://gabriellefoliv.github.io/gabriellefoliv/)
 - 🗯️ Ask me about React Native
 - 🔥 I'm currently learning microservices with NestJS, Prisma, GraphQL and Docker
+- 📬 Contact me: oliveiragabrielle662@gmail.com
 
 # 💻 Tech Stack:
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) 
