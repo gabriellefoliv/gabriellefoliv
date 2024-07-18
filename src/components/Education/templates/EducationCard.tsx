@@ -1,6 +1,6 @@
 
 interface EducationCardProps {
-    Logo: any,
+    Logo: string,
     Title: string,
     Date: string
 }
