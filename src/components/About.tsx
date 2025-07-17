@@ -2,10 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
+import { Button } from "./ui/button";
+import Link from "next/link";
+import { Github, Linkedin } from "lucide-react";
 
 export function About() {
   return (
-    <section className="w-full max-w-4xl mx-auto px-4 py-16 flex flex-col sm:flex-row items-center gap-8">
+    <section id="sobre" className="w-full max-w-4xl mx-auto mt-12 px-4 py-16 flex flex-col sm:flex-row items-center gap-8">
       {/* Avatar com animação */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -40,6 +44,58 @@ export function About() {
           Tenho paixão por <span className="font-medium">desenvolvimento de software</span>,
           <span className="font-medium"> cloud computing</span> e <span className="font-medium">liderança técnica</span>.
         </p>
+        <div className="mt-6 flex gap-2">
+          <HoverCard>
+            <HoverCardTrigger asChild className="flex gap-2">
+              <Link
+                className="px-4 py-2 bg-sky-700 text-white font-bold rounded-md hover:duration-500 duration-500 transition hover:transition hover:bg-sky-900/75"
+                href="https://www.linkedin.com/in/gabriellefoliv/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="" width={16} />
+                LinkedIn
+              </Link>
+        
+            </HoverCardTrigger>
+            <HoverCardContent>
+              <div className="flex bg-white rounded-md">
+                <Image
+                  src="/linkedin-preview.png"
+                  alt="LinkedIn Profile Preview"
+                  width={300}
+                  height={200}
+                  className="rounded-md"
+                />
+              </div>
+            </HoverCardContent>
+          </HoverCard>
+          <HoverCard>
+            <HoverCardTrigger asChild className="flex gap-2">
+              <Link
+                className="px-4 py-2 bg-zinc-800 text-white font-bold rounded-md hover:duration-500 duration-500 transition hover:transition hover:bg-zinc-700"
+                href="https://www.github.com/gabriellefoliv/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Github className="" width={16} />
+                GitHub
+              </Link>
+        
+            </HoverCardTrigger>
+            <HoverCardContent>
+              <div className="flex bg-white rounded-md">
+                <Image
+                  src="/github-preview.png"
+                  alt="LinkedIn Profile Preview"
+                  width={300}
+                  height={200}
+                  className="rounded-md"
+                />
+              </div>
+            </HoverCardContent>
+          </HoverCard>
+        </div>
       </motion.div>
     </section>
   );

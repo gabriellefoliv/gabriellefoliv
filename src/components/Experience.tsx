@@ -1,6 +1,10 @@
-import { experienceData } from "@/lib/experiences";
 import { Timeline } from "./ui/timeline";
+import { timelineData } from "@/lib/timeline";
 
 export function Experience() {
-  return <Timeline data={experienceData} />;
+  return (
+    <section id="experiencia">  
+      <Timeline data={timelineData} />
+    </section>
+  );
 }
