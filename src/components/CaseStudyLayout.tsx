@@ -42,13 +42,15 @@ export function CaseStudyLayout({
       </motion.div>
 
       <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.3 }}>
-        <Image
-          src={image}
-          alt={title}
-          width={900}
-          height={400}
-          className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800 shadow"
-        />
+        {image && (
+          <Image
+            src={image}
+            alt={title}
+            width={900}
+            height={400}
+            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800 shadow"
+          />
+        )}
       </motion.div>
 
       <div className="flex flex-wrap gap-2">
