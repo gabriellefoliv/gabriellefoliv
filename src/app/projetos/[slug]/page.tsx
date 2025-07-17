@@ -8,9 +8,18 @@ interface PageProps {
   };
 }
 
-export default function CaseStudyPage({ params }: PageProps) {
+export function generateStaticParams() {
+  return caseStudies.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
+export default async function CaseStudyPage({ params }: PageProps) {
   const project = caseStudies.find((p) => p.slug === params.slug);
-  if (!project) return notFound();
+
+  if (!project) {
+    notFound();
+  }
 
   return <CaseStudyLayout {...project} />;
 }
