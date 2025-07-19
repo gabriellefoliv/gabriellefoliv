@@ -19,7 +19,7 @@ export function Projects() {
         </div>
 
       <div className="relative px-6 sm:px-8 lg:px-10"> {/* Padding lateral aqui */}
-        <Carousel className="w-full" opts={{ loop: true }}>
+        <Carousel className="w-full" opts={{ loop: false }}>
           <CarouselContent className="flex gap-2">
             {projetos.map((proj, index) => (
               <CarouselItem

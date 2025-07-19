@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gabrielle Oliveira - Portfolio",
-  description: "Portfolio de Gabrielle Oliveira, desenvolvedora full stack.",
+  description: "Conheça meus projetos!",
 };
 
 export default function RootLayout({

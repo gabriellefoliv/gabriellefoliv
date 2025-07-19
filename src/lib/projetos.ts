@@ -3,7 +3,7 @@ export const projetos = [
         title: 'Hidra',
         description: 'Plataforma focada na gestão de projetos de Comitês de Bacia Hidrográfica com integração à Blockchain',
         image: '/hidra.png',
-        techStack: ['Next.js', 'Tailwind', 'PostgreSQL', 'Prisma'],
+        techStack: ['Next.js', 'Tailwind', 'Prisma'],
         // github: 'https://github.com/gabriellefoliv/api-hidrraa',
         // demo: 'https://hidra.vercel.app',
         caseLink: '/projetos/hidra'
@@ -15,6 +15,14 @@ export const projetos = [
         techStack: ['Expo', 'Node', 'MySQL'],
         // demo: 'https://hidra.vercel.app',
         caseLink: '/projetos/sigcol'
+    },
+    {
+        title: 'Encurtador de URL',
+        description: 'Foco em serviços AWS (Lambda, DynamoDB, S3) e Next.js',
+        image: '/isoas-app.png',
+        techStack: ['Next.js', 'Tailwind', 'AWS'],
+        // demo: 'https://hidra.vercel.app',
+        caseLink: '/projetos/encurtador-url'
     },
     {
         title: 'Thamiris F. - Advocacia',
@@ -29,7 +37,7 @@ export const projetos = [
         description: 'Plataforma focada na gestão de projetos de Comitês de Bacia Hidrográfica com integração à Blockchain',
         image: '/instituto-transformacao.png',
         techStack: ['Next.js', 'Tailwind', 'Stripe'],
-        demo: 'https://hidra.vercel.app',
+        // demo: 'https://hidra.vercel.app',
         caseLink: '/projetos/instituto-transformacao'
     },
     {
@@ -39,21 +47,5 @@ export const projetos = [
         techStack: ['Next.js', 'Tailwind', 'PostgreSQL', 'Prisma'],
         demo: 'https://play.google.com/store/apps/details?id=com.vphix.isoas&pli=1',
         caseLink: '/projetos/isoas'
-    },
-    {
-        title: 'Astra',
-        description: 'Plataforma focada no manuseio de bancos de dados SQLite em equipes',
-        image: '/isoas-app.png',
-        techStack: ['Next.js', 'Tailwind', 'PostgreSQL', 'Prisma'],
-        demo: 'https://hidra.vercel.app',
-        caseLink: '/projetos/astra'
-    },
-    {
-        title: 'Rotas',
-        description: 'Aplicativo para empresa de compostagem que faz a gestão de rotas otimizadas para coleta de resíduos orgânicos.',
-        image: '/isoas-app.png',
-        techStack: ['Expo', 'Node', 'MySQL', 'GCP'],
-        demo: 'https://hidra.vercel.app',
-        caseLink: '/projetos/rotas'
     },
 ]

@@ -33,7 +33,7 @@ const stacks = [
 
 export function Stacks() {
   return (
-    <section id="stack" className="w-full py-8 bg-neutral-50 dark:bg-neutral-950 px-4 md:px-20">
+    <section id="stack" className="w-full py-8  dark:bg-neutral-950 px-4 md:px-20">
       {/* <h2 className="text-3xl font-bold text-center text-zinc-900 dark:text-white mb-10">
         💻 Stacks que uso no dia a dia
       </h2> */}

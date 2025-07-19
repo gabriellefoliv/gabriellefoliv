@@ -1,4 +1,5 @@
 import { InstagramIcon, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -21,10 +22,19 @@ export function Footer() {
 
           <div className="flex justify-center md:justify-end gap-4">
             <a
+              href="https://wa.me/5521981449194"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-[#081534]/25 hover:bg-sky-200 transition duration-200"
+              aria-label="Email"
+            >
+              <FaWhatsapp className="w-6 h-6 text-[#081534]" />
+            </a>
+            <a
               href="https://mail.google.com/mail/?view=cm&to=oliveiragabrielle662@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-[#081534]/25 hover:bg-red-200 transition duration-200"
+              className="p-2 rounded-full bg-[#081534]/25 hover:bg-sky-200 transition duration-200"
               aria-label="Email"
             >
               <Mail className="w-6 h-6 text-[#081534]" />
@@ -33,7 +43,7 @@ export function Footer() {
               href="https://www.instagram.com/gabriellefoliv/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-[#081534]/25 hover:bg-red-200 transition duration-200"
+              className="p-2 rounded-full bg-[#081534]/25 hover:bg-sky-200 transition duration-200"
               aria-label="Instagram"
             >
               <InstagramIcon className="w-6 h-6 text-[#081534]" />

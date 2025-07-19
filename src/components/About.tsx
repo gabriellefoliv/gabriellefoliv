@@ -6,9 +6,12 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
+import { BlurredBubbles } from "./BlurredBubbles";
 
 export function About() {
   return (
+    <>
+    <BlurredBubbles/>
     <section id="sobre" className="w-full max-w-4xl mx-auto mt-12 px-4 py-16 flex flex-col sm:flex-row items-center gap-8">
       {/* Avatar com animação */}
       <motion.div
@@ -98,5 +101,6 @@ export function About() {
         </div>
       </motion.div>
     </section>
+    </>
   );
 }

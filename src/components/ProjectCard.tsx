@@ -29,7 +29,7 @@ export function ProjectCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col h-full w-auto bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+      className="flex flex-col h-full w-auto dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
     >
       <Image
         src={image}
@@ -39,27 +39,27 @@ export function ProjectCard({
         className="w-full h-36 object-cover"
       />
 
-      <div className="p-4 flex flex-col gap-2 flex-grow">
+      <div className="p-4 flex flex-col gap-1 flex-grow">
         <h3 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100">
           {title}
         </h3>
-        <p className="text-zinc-600 dark:text-zinc-400 text-sm flex-grow">
+        <p className="text-zinc-600 dark:text-zinc-400 text-sm ">
           {description}
         </p>
 
-        <div className="flex flex-wrap gap-2 mt-2">
+        <div className="flex flex-wrap gap-1 mt-2">
           {techStack.map((tech) => (
             <span
               key={tech}
-              className="bg-indigo-100 dark:bg-zinc-800 text-xs font-bold text-indigo-800 dark:text-zinc-300 px-2 py-1 rounded-full"
+              className="bg-indigo-500 dark:bg-zinc-800 text-xs font-bold text-white dark:text-zinc-300 px-2 py-1 rounded-full"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <div className="mt-4 flex flex-col gap-1">
-          <div className="flex items-center gap-4">
+        <div className="mt-4 flex flex-col gap-1 flex-grow">
+          <div className="flex items-center gap-4 justify-start">
             {demo && (
               <a
                 href={demo}
