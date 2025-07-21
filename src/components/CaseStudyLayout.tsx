@@ -2,18 +2,18 @@
 
 import { motion } from "framer-motion";
 import { Github, ExternalLink, ArrowLeft } from "lucide-react";
-import Image from "next/image";
-import { BlurredBubbles } from "./BlurredBubbles";
 import Link from "next/link";
+import { BlurredBubbles } from "./BlurredBubbles"; 
+import { CaseStudyCarousel } from "./CaseStudyCarousel";
 
 type Props = {
   title: string;
-  image: string;
+  images: string[]; 
   techStack: string[];
-  description: string;
-  problem: string;
-  solution: string;
-  impact: string;
+  description: string[];
+  problem: string[];
+  solution: string[];
+  impact: string[];
   githubFrontend?: string;
   githubBackend?: string;
   demo?: string;
@@ -21,7 +21,7 @@ type Props = {
 
 export function CaseStudyLayout({
   title,
-  image,
+  images, 
   techStack,
   description,
   problem,
@@ -38,27 +38,25 @@ export function CaseStudyLayout({
       transition={{ duration: 0.6 }}
       className="max-w-4xl mx-auto px-4 py-16 space-y-12"
     >
-      <BlurredBubbles/>
-      <Link href="/" className="flex gap-2">
-        <ArrowLeft className="text-zinc-500 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors" />
+      <BlurredBubbles />
+      <Link href="/" className="flex gap-2 items-center text-zinc-500 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors">
+        <ArrowLeft className="shrink-0" />
         Voltar para a página inicial
       </Link>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
-        <h1 className="text-3xl font-bold mb-2 text-zinc-900 dark:text-white">
+        <h1 className="text-3xl font-bold mb-4 text-zinc-900 dark:text-white">
           {title}
         </h1>
-        <p className="text-zinc-600 dark:text-zinc-300">{description}</p>
+        {description.map((paragraph, index) => (
+          <p key={`desc-${index}`} className="text-zinc-600 dark:text-zinc-300 mb-4 last:mb-0">
+            {paragraph}
+          </p>
+        ))}
       </motion.div>
 
       <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.3 }}>
-        {image && (
-          <Image
-            src={image}
-            alt={title}
-            width={900}
-            height={400}
-            className="w-full rounded-xl border border-zinc-200 dark:border-zinc-800 shadow"
-          />
+        {images && images.length > 0 && (
+          <CaseStudyCarousel images={images} title={title} />
         )}
       </motion.div>
 
@@ -73,26 +71,39 @@ export function CaseStudyLayout({
         ))}
       </div>
 
-      <div className="space-y-6 text-zinc-700 dark:text-zinc-300">
+      <div className="space-y-8 text-zinc-700 dark:text-zinc-300">
         <div>
-          <h2 className="text-xl font-semibold">🧩 O Problema</h2>
-          <p>{problem}</p>
+          <h2 className="text-xl font-semibold mb-2">🧩 O Problema</h2>
+          {problem.map((paragraph, index) => (
+            <p key={`prob-${index}`} className="mb-4 last:mb-0">
+              {paragraph}
+            </p>
+          ))}
         </div>
         <div>
-          <h2 className="text-xl font-semibold">🛠️ A Solução</h2>
-          <p>{solution}</p>
+          <h2 className="text-xl font-semibold mb-2">🛠️ A Solução</h2>
+          {solution.map((paragraph, index) => (
+            <p key={`sol-${index}`} className="mb-4 last:mb-0">
+              {paragraph}
+            </p>
+          ))}
         </div>
         <div>
-          <h2 className="text-xl font-semibold">📈 Impacto</h2>
-          <p>{impact}</p>
+          <h2 className="text-xl font-semibold mb-2">📈 Impacto</h2>
+          {impact.map((paragraph, index) => (
+            <p key={`impact-${index}`} className="mb-4 last:mb-0">
+              {paragraph}
+            </p>
+          ))}
         </div>
       </div>
 
-      <div className="flex gap-6 pt-4">
+      <div className="flex flex-wrap gap-6 pt-4">
         {githubFrontend && (
           <a
             href={githubFrontend}
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-blue-600 hover:underline text-sm"
           >
             <Github size={16} /> Ver código (Frontend)
@@ -102,15 +113,17 @@ export function CaseStudyLayout({
           <a
             href={githubBackend}
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-blue-600 hover:underline text-sm"
           >
-            <Github size={16} /> Ver código (Frontend)
+            <Github size={16} /> Ver código (Backend)
           </a>
         )}
         {demo && (
           <a
             href={demo}
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-green-600 hover:underline text-sm"
           >
             <ExternalLink size={16} /> Ver projeto ao vivo

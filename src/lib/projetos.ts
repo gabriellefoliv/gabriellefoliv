@@ -1,8 +1,8 @@
 export const projetos = [
     {
         title: 'Hidra',
-        description: 'Plataforma focada na gestão de projetos de Comitês de Bacia Hidrográfica com integração à Blockchain',
-        image: '/hidra.png',
+        description: 'Gestão de projetos de Comitês de Bacia Hidrográfica com integração à Blockchain',
+        image: '/hidra/hidra.png',
         techStack: ['Next.js', 'Tailwind', 'Prisma'],
         // github: 'https://github.com/gabriellefoliv/api-hidrraa',
         // demo: 'https://hidra.vercel.app',
@@ -18,24 +18,24 @@ export const projetos = [
     },
     {
         title: 'Encurtador de URL',
-        description: 'Foco em serviços AWS (Lambda, DynamoDB, S3) e Next.js',
-        image: '/isoas-app.png',
-        techStack: ['Next.js', 'Tailwind', 'AWS'],
-        // demo: 'https://hidra.vercel.app',
+        description: 'Foco em serviços AWS (Lambda e DynamoDB) e Next.js',
+        image: '/chop-chop.png',
+        techStack: ["AWS", 'Next.js', 'Tailwind'],
+        demo: 'https://chop-chop-url.vercel.app',
         caseLink: '/projetos/encurtador-url'
     },
     {
         title: 'Thamiris F. - Advocacia',
         description: 'Website para escritório de advocacia com foco em SEO e otimização',
-        image: '/thamiris-advocacia.png',
+        image: '/thamiris-adv/thamiris-advocacia.png',
         techStack: ['Next.js', 'Tailwind'],
         demo: 'https://thamirisferreiraadv.com.br',
         caseLink: '/projetos/thamiris-advocacia'
     },
     {
         title: 'Instituto Transformação',
-        description: 'Plataforma focada na gestão de projetos de Comitês de Bacia Hidrográfica com integração à Blockchain',
-        image: '/instituto-transformacao.png',
+        description: 'Website para projeto social com foco em SEO e integração com Stripe para doações',
+        image: '/jiujitsu/instituto-transformacao.png',
         techStack: ['Next.js', 'Tailwind', 'Stripe'],
         // demo: 'https://hidra.vercel.app',
         caseLink: '/projetos/instituto-transformacao'

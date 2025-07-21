@@ -51,7 +51,7 @@ export function ProjectCard({
           {techStack.map((tech) => (
             <span
               key={tech}
-              className="bg-indigo-500 dark:bg-zinc-800 text-xs font-bold text-white dark:text-zinc-300 px-2 py-1 rounded-full"
+              className="bg-sky-900 dark:bg-zinc-800 text-xs font-bold text-white dark:text-zinc-300 px-2 py-1 rounded-full"
             >
               {tech}
             </span>

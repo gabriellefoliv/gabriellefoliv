@@ -39,7 +39,7 @@ export function Footer() {
             >
               <Mail className="w-6 h-6 text-[#081534]" />
             </a>
-            <a
+            {/* <a
               href="https://www.instagram.com/gabriellefoliv/"
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +47,7 @@ export function Footer() {
               aria-label="Instagram"
             >
               <InstagramIcon className="w-6 h-6 text-[#081534]" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

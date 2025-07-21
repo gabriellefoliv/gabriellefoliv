@@ -5,8 +5,9 @@ import Image from "next/image";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { Download, Github, Linkedin } from "lucide-react";
 import { BlurredBubbles } from "./BlurredBubbles";
+import { LinkPreview } from "./ui/link-preview";
 
 export function About() {
   return (
@@ -48,10 +49,9 @@ export function About() {
           <span className="font-medium"> cloud computing</span> e <span className="font-medium">liderança técnica</span>.
         </p>
         <div className="mt-6 flex gap-2">
-          <HoverCard>
-            <HoverCardTrigger asChild className="flex gap-2">
+          <LinkPreview url="https://www.linkedin.com/" className="flex gap-2">
               <Link
-                className="px-4 py-2 bg-sky-700 text-white font-bold rounded-md hover:duration-500 duration-500 transition hover:transition hover:bg-sky-900/75"
+                className="flex gap-2 px-4 py-2 bg-sky-700 text-white font-bold rounded-md hover:duration-500 duration-500 transition hover:transition hover:bg-sky-900/75"
                 href="https://www.linkedin.com/in/gabriellefoliv/" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -59,24 +59,11 @@ export function About() {
                 <Linkedin className="" width={16} />
                 LinkedIn
               </Link>
-        
-            </HoverCardTrigger>
-            <HoverCardContent>
-              <div className="flex bg-white rounded-md">
-                <Image
-                  src="/linkedin-preview.png"
-                  alt="LinkedIn Profile Preview"
-                  width={300}
-                  height={200}
-                  className="rounded-md"
-                />
-              </div>
-            </HoverCardContent>
-          </HoverCard>
-          <HoverCard>
-            <HoverCardTrigger asChild className="flex gap-2">
+          </LinkPreview>
+
+          <LinkPreview url="https://www.github.com/gabriellefoliv/" className="flex gap-2">
               <Link
-                className="px-4 py-2 bg-zinc-800 text-white font-bold rounded-md hover:duration-500 duration-500 transition hover:transition hover:bg-zinc-700"
+                className="flex gap-2 px-4 py-2 bg-zinc-800 text-white font-bold rounded-md hover:duration-500 duration-500 transition hover:transition hover:bg-zinc-700"
                 href="https://www.github.com/gabriellefoliv/" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -84,20 +71,18 @@ export function About() {
                 <Github className="" width={16} />
                 GitHub
               </Link>
+          </LinkPreview>
+          <a
+            href="/CV.pdf" 
+            download="Gabrielle-Oliveira-CV.pdf" 
+            className="flex gap-2 justify-center items-center rounded-md font-bold px-4 py-2 hover:duration-500 duration-500 transition hover:transition bg-neutral-100 text-black hover:bg-zinc-800 hover:text-white border border-zinc-900"
+          >
+            <Download className="" width={16} />
+            Resume
+          </a>
         
-            </HoverCardTrigger>
-            <HoverCardContent>
-              <div className="flex bg-white rounded-md">
-                <Image
-                  src="/github-preview.png"
-                  alt="LinkedIn Profile Preview"
-                  width={300}
-                  height={200}
-                  className="rounded-md"
-                />
-              </div>
-            </HoverCardContent>
-          </HoverCard>
+            
+            
         </div>
       </motion.div>
     </section>
