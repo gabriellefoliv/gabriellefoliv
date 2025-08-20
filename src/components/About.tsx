@@ -154,7 +154,7 @@ export function About() {
               </Link>
             </LinkPreview>
             <a
-              href="/CV.pdf"
+              href="/[PT-BR]-Gabrielle-Oliveira-CV.pdf"
               download="Gabrielle-Oliveira-CV.pdf"
               className="flex gap-2 justify-center items-center rounded-md font-bold px-4 py-2 hover:duration-500 duration-500 transition hover:transition bg-neutral-100 text-black hover:bg-zinc-800 hover:text-white border border-zinc-900"
             >
