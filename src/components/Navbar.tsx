@@ -20,7 +20,7 @@ export function Navbar() {
             height={50}
             className="cursor-pointer"
           /> */}
-          <h1 className="text-sky-900 font-bold">Gabrielle Oliveira</h1>
+          {/* <h1 className="text-sky-900 font-bold">Gabrielle Oliveira</h1> */}
         </Link>
 
         {/* Links desktop */}

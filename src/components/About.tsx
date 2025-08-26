@@ -112,12 +112,21 @@ export function About() {
           viewport={{ once: true }}
           className="text-center sm:text-left"
         >
-          <h1 className="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-white">
-            Gabrielle Oliveira
-          </h1>
+          <div className="flex flex-col w-full sm:w-auto">
+            <h1 className="flex flex-wrap items-center text-xl sm:text-2xl md:text-3xl font-bold text-zinc-900 dark:text-white">
+              Olá! 
+              <img 
+                src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" 
+                className="w-6 h-6 sm:w-8 sm:h-8 mx-1 sm:mx-2" 
+                alt="Olá"
+              /> 
+              Me chamo 
+              <span className="text-sky-900 ml-1 sm:ml-2">Gabrielle Oliveira</span>
+            </h1>
+          </div>
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
             Estudante de Engenharia da Computação na{" "}
-            <span className="font-semibold text-blue-600 dark:text-blue-400">
+            <span className="font-semibold text-sky-900 dark:text-blue-400">
               UERJ
             </span>
             , atualmente no 6º período. Diretora de Projetos de Computação na{" "}
